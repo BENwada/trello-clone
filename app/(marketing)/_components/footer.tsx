@@ -1,18 +1,17 @@
 import { Logo } from "@/components/logo";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
-const Navbar = () => {
+const Footer = () => {
   return (
-    <div className="fixed top-0 flex h-14 w-full items-center border-b bg-white px-4 shadow-sm">
+    <div className="fixed bottom-0 w-full border-t bg-slate-100 p-4">
       <div className="mx-auto flex w-full items-center justify-between md:max-w-screen-2xl">
         <Logo />
         <div className="flex w-full items-center justify-between space-x-4 md:block md:w-auto">
-          <Button size="sm" variant="outline" asChild>
-            <Link href="/sign-in">Login</Link>
+          <Button size="sm" variant="ghost">
+            Privacy Policy
           </Button>
-          <Button size="sm" asChild>
-            <Link href="/sign-up">Get Taskify for free</Link>
+          <Button size="sm" variant="ghost">
+            Terms of Service
           </Button>
         </div>
       </div>
@@ -20,4 +19,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Footer;
